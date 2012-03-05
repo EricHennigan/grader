@@ -1,0 +1,43 @@
+
+Project:
+    To provide a convenient GUI for grading student assignments
+
+Directory Assumptions:
+    - roster.csv
+        The class roster in the following format:
+            A tab delimited file containing a first row of headers
+            The following headers are special to the system, and must be present
+
+            StandardName: the internal name for this student (see submissions/ section)
+            FirstName: the student's first (familiar) name
+            LastName:  the student's last (family) name
+            UniqueId:  the student's unique identification nuber
+                       example: their student id number
+            EmailAddress: the student's email address
+
+            Any other columns are not tracked by the system, and do not require having a particular header
+            However, it is recommended that any additional headers present are uniquely named
+
+    - rubric.txt
+        For each assignment, a rubric must be made in the following format:
+        The rubric is line-oriented.
+        Major sections look like "SectionName (points):"
+        Inside of each section are lines which either add or dock points together with a short description
+        Longer commentary is possible via lines which do not start with either a + or -, shown below as (-10)
+        For example, a rubric of two sections
+
+        Code Style (80):
+        -10 indentation
+        -5  improper use of curly braces
+        +5  clear control flow
+
+        Worksheet (40):
+        -5 algorithm description incomplete
+        (-10) use more terminology in your writing
+
+    - submissions/
+        A directory containing the student submissions
+        Inside this directory is list of directories, one for each student, named with the StandardName
+        
+    - testing/
+        TODO: support automated testing of student submissions
