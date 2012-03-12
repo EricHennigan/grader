@@ -15,6 +15,9 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public slots:
+    void on_menuOpenRoster_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

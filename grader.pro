@@ -8,9 +8,12 @@ FORMS    += \
     src/mainwindow.ui
 
 HEADERS += \
-    src/mainwindow.h
+    src/mainwindow.h \
+    src/qxtglobal.h \
+    src/qxtcsvmodel.h
 
 SOURCES += \
     src/main.cpp \
-    src/mainwindow.cpp
+    src/mainwindow.cpp \
+    src/qxtcsvmodel.cpp
 

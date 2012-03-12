@@ -5,7 +5,7 @@ Project:
 Directory Assumptions:
     - roster.csv
         The class roster in the following format:
-            A tab delimited file containing a first row of headers
+            A csv file containing a first row of headers
             The following headers are special to the system, and must be present
 
             StandardName: the internal name for this student (see submissions/ section)
@@ -38,6 +38,6 @@ Directory Assumptions:
     - submissions/
         A directory containing the student submissions
         Inside this directory is list of directories, one for each student, named with the StandardName
-        
+
     - testing/
         TODO: support automated testing of student submissions
